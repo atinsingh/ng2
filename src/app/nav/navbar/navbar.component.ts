@@ -12,12 +12,12 @@ export class NavbarComponent implements OnInit {
   links = [{
       id: 1,
       text: 'Home',
-      href: '/home'
+      href: 'home'
     },
     {
       id: 2,
       text: 'About Us',
-      href: '/about-us'
+      href: 'about-us'
     },
     {
       id: 3,
@@ -27,12 +27,12 @@ export class NavbarComponent implements OnInit {
     {
       id: 4,
       text: 'Contact Us',
-      href: '/contact'
+      href: 'contact'
     },
     {
       id: 5,
       text: 'Blog',
-      href: '/blog'
+      href: 'blog'
     }
   ];
 

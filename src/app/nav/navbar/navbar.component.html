@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" routerLink="/" href="#">
           <img width="20px" src="assets/logo.svg"/>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li *ngFor ="let link of links" class="nav-item">
-            <a class="nav-link active" aria-current="page" href={{link.href}}> {{ link.text}} </a>
+            <a routerLink={{link.href}} class="nav-link" aria-current="page" > {{ link.text}} </a>
           </li>
         </ul>
         <app-search></app-search>
@@ -28,14 +28,4 @@
       </ul>
     </div>
   </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <app-hero (notifications)="updateCounter($event)" username={{getName()}}></app-hero>
-            </div>
-            <div class="col-6">
-                <h1>Notification Area</h1>
-            </div>
-        </div>
-    </div>  
-  
+  <router-outlet></router-outlet>
