@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { NavModule } from './nav/nav.module'
 import { AboutModule } from './about/about.module';
 import { ServicesComponent } from './outservice/services.component';
-import { HomeHeroComponent } from './home-hero/home-hero.component'
+import { HomeHeroComponent } from './home-hero/home-hero.component';
+import { BlogComponent } from './blog/blog.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ServicesComponent,
-    HomeHeroComponent
+    HomeHeroComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
