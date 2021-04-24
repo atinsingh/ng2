@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular2"
+    }
+  },
+  "defaultProject": "angular2",
+  "cli": {
+    "analytics": "38fd520c-848e-44f8-b7c9-e9ffa0602401"
+  }
 }
